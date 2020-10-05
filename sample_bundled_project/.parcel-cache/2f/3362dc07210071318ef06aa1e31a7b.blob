@@ -1,6 +1,0 @@
-"use strict";
-
-var _d = require("d3");
-
-console.log("hello world");
-(0, _d.select)("body").append("div").text("I am here from JavaScript");

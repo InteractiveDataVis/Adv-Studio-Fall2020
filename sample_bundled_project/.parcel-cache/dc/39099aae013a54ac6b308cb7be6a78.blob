@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,QAAQC,IAAI","sources":["./src/index.js"],"sourcesContent":["console.log(\"hello world\");\n"],"names":["console","log"],"version":3,"file":"sample_bundled_project.HASH_REF_fc23d990c7f8af350a3518110b11d7ff.js.map"}

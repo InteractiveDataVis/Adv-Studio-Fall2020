@@ -1,7 +1,0 @@
-"use strict";
-
-var _d = require("d3");
-
-// import * as d3 from "d3";
-console.log("Hello World");
-(0, _d.select)("body").append("div").text("THIS IS FROM MY JS FILE!");
