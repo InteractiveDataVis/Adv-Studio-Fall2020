@@ -1,0 +1,22 @@
+.chart-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  height: 80vh;
+}
+
+.chart {
+  position: relative;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  background-color: pink;
+  border: lightslategray 1px solid;
+}
+
+.react-rendered-barchart .bar {
+  transition: transform 500ms;
+}
