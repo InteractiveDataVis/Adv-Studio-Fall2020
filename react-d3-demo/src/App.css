@@ -26,4 +26,13 @@
 
 .chart-wrapper {
   width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bar {
+  background-color: mediumpurple;
+  position: absolute;
+  transition: transform 200ms;
 }

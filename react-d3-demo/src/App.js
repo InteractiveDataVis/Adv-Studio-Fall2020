@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import { randomUniform } from "d3-random";
 import { format } from "d3";
 import "./App.css";
+import ReactRenderedBar from "./premade/ReactRenderedBar.js";
+import D3RenderedBar from "./premade/D3RenderedBar.js";
 
 const maxDataLength = 50;
 
 function App() {
+  // State HOOK
   const [data, setData] = useState([]);
 
   const createNewRandomData = () => {
@@ -25,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello Class
+        Hello Anything
         <button onClick={createNewRandomData}>Shuffle Data</button>
       </header>
       <div className="main">
@@ -33,7 +36,10 @@ function App() {
           <div>Data (length = {data.length}): </div>{" "}
           {data.map(format(".02f")).join(" ")}
         </div>
-        <div className="chart-wrapper"></div>
+        <div className="chart-wrapper">
+          <ReactRenderedBar data={data} />
+          <D3RenderedBar data={data} />
+        </div>
       </div>
     </div>
   );
